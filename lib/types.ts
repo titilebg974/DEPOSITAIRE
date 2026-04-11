@@ -14,6 +14,8 @@ export interface Player {
   name: string;
   position: Position;
   number: number;
+  /** Club Top 14 (indicatif, données publiques / démo) */
+  club?: string;
 }
 
 export interface LoadEntry {
