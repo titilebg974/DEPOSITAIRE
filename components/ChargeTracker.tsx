@@ -117,17 +117,29 @@ export function ChargeTracker() {
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
       <header className="mb-10 border-b border-[#1e3a5f] pb-8">
-        <p className="text-sm font-medium uppercase tracking-widest text-[#60a5fa]">
-          Démonstration · Top 14 (indicatif)
-        </p>
-        <h1 className="mt-2 text-3xl font-semibold tracking-tight text-[#e8eef8] sm:text-4xl">
-          Charge joueur tracker
-        </h1>
-        <p className="mt-3 max-w-2xl text-[#8ba3c4]">
-          Effectif type Top 14 avec noms et clubs publics (démo). Enregistrez la
-          charge perçue (RPE 1–10) et le volume (minutes) par séance — données
-          stockées localement dans le navigateur.
-        </p>
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-widest text-[#60a5fa]">
+              Démonstration · Top 14 (indicatif)
+            </p>
+            <h1 className="mt-2 text-3xl font-semibold tracking-tight text-[#e8eef8] sm:text-4xl">
+              Charge joueur tracker
+            </h1>
+            <p className="mt-3 max-w-2xl text-[#8ba3c4]">
+              Effectif type Top 14 avec noms et clubs publics (démo). Enregistrez
+              la charge perçue (RPE 1–10) et le volume (minutes) par séance —
+              données stockées localement dans le navigateur.
+            </p>
+          </div>
+          <a
+            href="https://calendly.com/at-euphron/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex shrink-0 items-center justify-center rounded-lg bg-[#1d4ed8] px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2563eb] focus:outline-none focus:ring-2 focus:ring-[#3b82f6] focus:ring-offset-2 focus:ring-offset-[#111d32]"
+          >
+            Prendre un RDV démo
+          </a>
+        </div>
       </header>
 
       <section className="mb-10 grid gap-4 sm:grid-cols-3">
